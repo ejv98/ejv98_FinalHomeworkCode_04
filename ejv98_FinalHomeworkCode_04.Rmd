@@ -96,6 +96,9 @@ print(values)
 }
 ```
 
+*The "alternative" part of the function is just indicating to the function which side of the distribution you are looking at (in a one or two sample test). Everything else in the function should be constant except for the "lower.tail" part of defining p (so basically you dont have to repeat the CI equation each time).*
+
+
 <!-- [2] The dataset from Kamilar and Cooper has in it a large number of variables related to life history and body size. For this exercise, the end aim is to fit a simple linear regression model to predict longevity (MaxLongevity_m) measured in months from species’ brain size (Brain_Size_Species_Mean) measured in grams. Do the following for both longevity~brain size and log(longevity)~log(brain size): -->
 
 ```{r}
