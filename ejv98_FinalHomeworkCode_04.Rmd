@@ -146,6 +146,9 @@ beta1
 ci.slope<-confint(M1, level = 0.9)
 ci.slope
 ```
+
+*what are your interpretations of the coefficients?*
+
 <!-- Using your model, add lines for the 90 percent confidence and prediction interval bands on the plot and add a legend to differentiate between the lines. -->
 
 ```{r}
@@ -249,5 +252,9 @@ predict(logM1, newdata = data.frame(x = 800))
 predict(logM1, newdata = data.frame(x = 800), interval = "prediction",level = 0.90)
 ```
 
+*Do you trust this prediction that your model made for Brain_Size_Species_Mean = 800??*
+
 Looking at your two models, which do you think is better? Why?
 #The log model appears to works better - it gave a higher r2 value, which means a strong linear relationship.
+
+*code looks good, but dont forget to interpret it*
